@@ -10,7 +10,7 @@ class Config:
     MAIL_PORT = 465
     MAIL_USE_SSL = True
     MAIL_USERNAME = '15110572023@stumail.sdut.edu.cn'
-    MAIL_PASSWORD = 'xxxxxx'
+    MAIL_PASSWORD = 'asdf1234'
     FLASKY_MAIL_SUBJECT_PREFIX = 'Energy'
     FLASKY_MAIL_SENDER = '15110572023@stumail.sdut.edu.cn'
     FLASKY_ADMIN = 'Energy'
