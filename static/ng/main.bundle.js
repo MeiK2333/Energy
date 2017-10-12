@@ -285,14 +285,14 @@ var HttpApiService = (function () {
             .catch(this.handleError);
     };
     HttpApiService.prototype.send_check_email = function (energy, email) {
-        var url = "http://127.0.0.1:5000/check_email/" + email + "/";
+        var url = "/check_email/" + email + "/";
         var body = JSON.stringify(energy.data);
         return this.http.post(url, body)
             .toPromise()
             .then(function (response) { return true; });
     };
     HttpApiService.prototype.send_submit_email = function (stu_id, builing, room_id, email) {
-        var url = "http://127.0.0.1:5000/submit_email/" + email + "/";
+        var url = "/submit_email/" + email + "/";
         var body = JSON.stringify({
             'id': stu_id,
             'room': builing + room_id
